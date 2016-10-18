@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  padding-top: 140px;
+  width: 450px;
+  align-items: center;
+  border: 10px;
+  background-color: white;
+  padding-bottom: 140px;
+}
+
+#txtArea {
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  float: left;
+  width: 365px;
+}
+
+.counter {
+  float: right;
+  font-size: 12px;
+}
+
+.container h2 {
+  border-bottom: 1px solid;
+  margin: 0px;
+}
+
+.new-tweet {
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin: 2em;
+
+}
