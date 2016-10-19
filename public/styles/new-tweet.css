@@ -1,3 +1,5 @@
+
+/*NEW TWEET*/
 .container {
   margin: 0 auto;
   padding-top: 140px;
@@ -31,5 +33,71 @@
   background-color: #e8e8e8;
   padding: 10px;
   margin: 2em;
-
 }
+
+.over {
+    color: red;
+}
+
+/*POSTED TWEET */
+
+article img {
+  height: 30px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+#tweetContainer header {
+  height: 50px;
+  background-color: #e8e8e8;
+}
+
+.tweets {
+ margin: 2em;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 2px;
+}
+
+article .userName {
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: 90%;
+  margin: 10px 0;
+}
+
+article .handle {
+  float: right;
+  font-size: 15px;
+  margin: 10px 7px;
+}
+
+article p {
+  padding: 5px;
+  margin: 30px 0 30px 5px;
+}
+
+footer {
+  border-top: 1px solid;
+  border-color: #e8e8e8;
+  padding: 7px;
+  height: 35px;
+  font-size: 12px;
+}
+
+footer img {
+  vertical-align: 80%;
+  margin: 2px;
+  float: right;
+  height: 15px;
+  width: 20px;
+  padding-bottom: 1px;
+  opacity: 0;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+
+

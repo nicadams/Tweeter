@@ -17,8 +17,9 @@
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- App JS -->
+    <!-- Scripts JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -34,11 +35,35 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
-        <textarea name="text" class="message" id="txtArea" placeholder="What are you humming about?"></textarea>
+        <textarea name="text" class="newTweet" id="txtArea" placeholder="What are you humming about?"></textarea>
         <input type="submit" id="tweetButton" value="Tweet">
-        <span class="counter">140</span>
+        <span class="counter" id="count"></span>
         </form>
       </section>
+
+        <div class="tweets" id="tweetContainer">
+         <!--  <article> -->
+          <article>
+          <header>
+          <img class="profilePic" src="images/bird.png">
+          <span class="userName">USERNAME</span>
+          <span class="handle">@YOSEIF</span>
+          </header>
+
+          <p class="tweet"></p>
+
+          <footer>
+            <span>10 days ago</span>
+            <img class="retweet" src="/images/retweet.png">
+            <img class="flag" src="/images/flag.png">
+            <img class="heart" src="/images/heart.png">
+
+
+          </footer>
+
+         </article>
+
+        </div>
     </main>
 
   </body>
