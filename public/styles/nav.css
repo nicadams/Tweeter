@@ -25,3 +25,20 @@
   float: left;
   vertical-align: center;
 }
+
+#compose {
+  float: right;
+  margin: 15px 90px 0 0;
+  padding: 12px 8px;
+  border-radius: 5px;
+  background-color: #e8e8e8;
+}
+
+#compose img {
+  height: 15px;
+}
+
+#compose:hover {
+  color: #00a087;
+}
+

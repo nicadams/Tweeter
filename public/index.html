@@ -28,6 +28,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
+      <button id="compose"><img src="/images/edit.png"> Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -36,32 +37,32 @@
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
         <textarea name="text" class="newTweet" id="txtArea" placeholder="What are you humming about?"></textarea>
-        <input type="submit" id="tweetButton" value="Tweet">
+        <input type="submit" id="tweetButton" value="Tweet" disabled="disabled">
         <span class="counter" id="count"></span>
         </form>
       </section>
 
         <div class="tweets" id="tweetContainer">
          <!--  <article> -->
-          <article>
+          <!-- <article>
           <header>
-          <img class="profilePic" src="images/bird.png">
-          <span class="userName">USERNAME</span>
-          <span class="handle">@YOSEIF</span>
+          <img class="profilePic">
+          <span class="userName"></span>
+          <span class="handle"></span>
           </header>
 
           <p class="tweet"></p>
 
           <footer>
-            <span>10 days ago</span>
+            <span></span>
             <img class="retweet" src="/images/retweet.png">
             <img class="flag" src="/images/flag.png">
             <img class="heart" src="/images/heart.png">
+ -->
 
+         <!--  </footer>
 
-          </footer>
-
-         </article>
+         </article> -->
 
         </div>
     </main>
