@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -38,13 +39,15 @@
         <form method="POST" action="/tweets">
         <textarea name="text" class="newTweet" id="txtArea" placeholder="What are you humming about?"></textarea>
         <input type="submit" id="tweetButton" value="Tweet" disabled="disabled">
+        <span class="alert">Shorten yo tweet son!</span>
         <span class="counter" id="count"></span>
         </form>
       </section>
 
         <div class="tweets" id="tweetContainer">
+
          <!--  <article> -->
-          <!-- <article>
+    <!-- <article>
           <header>
           <img class="profilePic">
           <span class="userName"></span>
@@ -58,9 +61,8 @@
             <img class="retweet" src="/images/retweet.png">
             <img class="flag" src="/images/flag.png">
             <img class="heart" src="/images/heart.png">
- -->
 
-         <!--  </footer>
+          </footer>
 
          </article> -->
 

@@ -22,7 +22,7 @@ $(function() {
         </header>
       <p>${tweet.content.text}</p>
       <footer>
-        <span>${tweet.created_at}</span>
+        <span>${tweet.created_at} days ago</span>
         <img src="/images/flag.png"/>
         <img src="/images/retweet.png"/>
         <img src="/images/heart.png"/>
@@ -43,7 +43,7 @@ $(function() {
     })
   }
 
-  loadTweets();
+  // loadTweets();
 
 
   $('form').on('submit', function newTweet(event) {

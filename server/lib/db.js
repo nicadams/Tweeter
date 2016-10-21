@@ -6,9 +6,9 @@ const MONGODB_URI = "mongodb://127.0.0.1:27017/tweeter";
 var collection;
 
 var methods = {
-  saveTweet: (data, cb) => {
+  saveTweet: (data, callback) => {
     collection.insertOne( { tweet: data }, (err, res) => {
-      cb(res);
+      callback(res);
     })
   },
 

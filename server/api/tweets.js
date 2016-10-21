@@ -21,12 +21,13 @@ module.exports = function(db) {
     }
 
     let user = req.body.user ? req.body.user : User.generateRandomUser();
+    let days = Math.round(Date.now() / (1000*60*60*24*100000));
     let tweet = {
       user: user,
       content: {
         text: req.body.text
       },
-      created_at: Date.now()
+      created_at: days
     };
     db.saveTweet(tweet, () =>{
       return res.json(tweet);

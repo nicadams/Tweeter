@@ -24,7 +24,7 @@
 
 .container h2 {
   border-bottom: 1px solid;
-  margin: 0px;
+  margin: 0;
 }
 
 .new-tweet {
@@ -34,9 +34,21 @@
   margin: 2em;
 }
 
+.alert {
+  opacity: 0;
+  margin-left: 5px;
+  color: red;
+}
+
+.alert.error {
+  opacity: 1;
+}
+
 .over {
     color: red;
 }
+
+
 
 /*POSTED TWEET */
 
