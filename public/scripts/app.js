@@ -1,8 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 $(function() {
 
   $('#compose').on('click', function(e) {
@@ -48,7 +43,7 @@ $(function() {
     })
   }
 
-  // loadTweets();
+  loadTweets();
 
 
   $('form').on('submit', function newTweet(event) {

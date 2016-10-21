@@ -7,11 +7,11 @@ const tweets  = express.Router();
 module.exports = function(db) {
 
   tweets.get("/", function(req, res) {
-    let tweets = db.getTweets();
-    // simulate delay
-    setTimeout(() => {
-      return res.json(tweets);
-    }, 300);
+
+    let tweets = db.getTweets(function(tweets) {
+        return res.json(tweets);
+    });
+
   });
 
   tweets.post("/", function(req, res) {
@@ -20,17 +20,17 @@ module.exports = function(db) {
       return res.send("{'error': 'invalid request'}\n");
     }
 
-    const user = req.body.user ? req.body.user : User.generateRandomUser();
-    const tweet = {
+    let user = req.body.user ? req.body.user : User.generateRandomUser();
+    let tweet = {
       user: user,
       content: {
         text: req.body.text
       },
       created_at: Date.now()
     };
-    db.saveTweet(tweet);
-
-    return res.send(tweet);
+    db.saveTweet(tweet, () =>{
+      return res.json(tweet);
+    });
   });
 
   return tweets;
