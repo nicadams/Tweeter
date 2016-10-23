@@ -86,7 +86,7 @@ body {
   opacity: 0;
   margin-left: 5px;
   color: red; }
-  .alert.error {
+  .alert.showAlert {
     opacity: 1; }
 
 .over {

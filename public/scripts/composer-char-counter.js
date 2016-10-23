@@ -9,7 +9,7 @@ $(function() {
       if (characters > maxCharacters) {
           // disbable button, make counter red, show alert
           count.addClass("over");
-          $(".alert").addClass("error");
+          $(".alert").addClass("showAlert");
           $("#tweetButton").attr("disabled", "disabled");
       } else {
         if(characters === 0) {
@@ -18,7 +18,7 @@ $(function() {
         } else {
           // enable button, make counter grey, hide alert
           count.removeClass("over");
-          $(".alert").removeClass("error");
+          $(".alert").removeClass("showAlert");
           $("#tweetButton").removeAttr("disabled", "disabled");
         }
       }
